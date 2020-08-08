@@ -30,6 +30,7 @@ task :post do
     post.puts "description: "
     post.puts "img:"
     post.puts "tags: []"
+    post.puts "mathjax: true"
     post.puts "---"
   end
 end # task :post
