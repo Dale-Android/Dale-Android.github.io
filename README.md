@@ -1,6 +1,4 @@
 
 ## Thanks
 
-This is modified from ![artemsheludko's flexible-jekyll](https://github.com/artemsheludko/flexible-jekyll).
-
-Thanks ![artemsheludko](https://github.com/artemsheludko)!
+This is modified from ![jekyll-theme-next](https://github.com/Simpleyyt/jekyll-theme-next).
