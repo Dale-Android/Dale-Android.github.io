@@ -2,7 +2,7 @@
 layout: post
 title: "ViewPager自定义切页动画"
 date: "2017-11-25 11:41:00 +0800"
-description: ""
+description:
 img: 
 tags: [Android, 动画]
 mathjax: true
