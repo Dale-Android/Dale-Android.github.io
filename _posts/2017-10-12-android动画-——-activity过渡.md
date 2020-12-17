@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Android动画 —— Activity过渡"
-date: "2020-08-10 11:44:13 +0800"
-description: 
+date: "2017-10-12 00:20:06 +0800"
+description:
 img:
 tags: [Android, 动画]
 mathjax: true
@@ -128,7 +128,7 @@ Android默认支持的共享元素过渡如下表。
 
 启动SecondActivity，待界面显示出来后，点击返回键，退出。效果如下图
 
-![Enter and exit.gif](http://upload-images.jianshu.io/upload_images/6257242-83b964b25841759e.gif?imageMogr2/auto-orient/strip)
+![Enter and exit.gif](/assets/post_resources/01.gif)
 
 正如Explode的描述，进入时，界面中的所有View都是从外部往中间飞入（注意方向是中心）；而退出时，所有View都是以中心为源而向外飞散。上面定义的文本及四个不同位置的定位View，就是为了让这个现象更清楚。
 
@@ -150,7 +150,7 @@ Android默认支持的共享元素过渡如下表。
 
 此过程的过渡效果如下
 
-![Two enters and exits.gif](http://upload-images.jianshu.io/upload_images/6257242-a8123c9b9358e70d.gif?imageMogr2/auto-orient/strip)
+![Two enters and exits.gif](/assets/post_resources/02.gif)
 
 可以看到，正如上述结论，SecondActivity被启动时，采用Explode效果进入，在最后退出时，也会是此效果退出（即2的进入、4的退出为一组Explode）；当SecondActivity启动ThirdActivity时，退出到后台，执行了Slide效果，退出ThirdActivity使其重新回到前台时，同样执行了Slide效果进入（即2的退出、4的进入为一组Slide）。SecondActivity在整个过程中有两组进入与退出，且相互独立。
 
@@ -197,7 +197,7 @@ startActivity(new Intent(this, ThirdActivity.class),
 
 无需另加效果，以上调用即可实现共享元素过渡。
 
-![Shared text.gif](http://upload-images.jianshu.io/upload_images/6257242-74623abf14862dcd.gif?imageMogr2/auto-orient/strip)
+![Shared text.gif](/assets/post_resources/03.gif)
 
 是不是感觉很酷炫？
 
@@ -236,7 +236,7 @@ startActivity(new Intent(this, ThirdActivity.class),
 ```
 两个界面中，图片的位置和大小，都有差别。
 
-![shared image.gif](http://upload-images.jianshu.io/upload_images/6257242-a057d84126e0c996.gif?imageMogr2/auto-orient/strip)
+![shared image.gif](/assets/post_resources/04.gif)
 
 成功实现图片过渡，并且还有图片尺寸的变化。
 
@@ -253,7 +253,7 @@ options = ActivityOptions.makeSceneTransitionAnimation(this,
                   new Pair<View, String>(mImage, "test_image"), new Pair<View, String>(mText, "test_text"));
 ```
 
-![shared image and text.gif](http://upload-images.jianshu.io/upload_images/6257242-6f59b7f58676fe66.gif?imageMogr2/auto-orient/strip)
+![shared image and text.gif](/assets/post_resources/05.gif)
 
 # 小结
 
