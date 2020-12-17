@@ -10,6 +10,5 @@ type: about
 
 # 个人主页
 
-**简书**：https://www.jianshu.com/u/001142ffd0c
-
-**Github**：https://github.com/JaceeDai
+- **简书**：[https://www.jianshu.com/u/001142ffd0c4](https://www.jianshu.com/u/001142ffd0c4)
+- **Github**：[https://github.com/JaceeDai](https://github.com/JaceeDai)
