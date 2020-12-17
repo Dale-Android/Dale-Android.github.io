@@ -29,7 +29,7 @@ task :post do
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts "date: \"#{now.inspect}\""
-    post.puts "description: \"#{ENV["desc"]}\""
+    post.puts "description: #{ENV["desc"]}"
     post.puts "img: #{ENV["img"]}"
     post.puts "tags: [#{ENV["tags"]}]"
     post.puts "mathjax: true"
