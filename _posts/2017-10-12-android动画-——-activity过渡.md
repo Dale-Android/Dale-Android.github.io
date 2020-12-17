@@ -153,7 +153,7 @@ Android默认支持的共享元素过渡如下表。
 ![Two enters and exits.gif](/assets/post_resources/02.gif)
 
 可以看到，正如上述结论，SecondActivity被启动时，采用Explode效果进入，在最后退出时，也会是此效果退出（即2的进入、4的退出为一组Explode）；当SecondActivity启动ThirdActivity时，退出到后台，执行了Slide效果，退出ThirdActivity使其重新回到前台时，同样执行了Slide效果进入（即2的退出、4的进入为一组Slide）。SecondActivity在整个过程中有两组进入与退出，且相互独立。
-
+[2017-10-21-android动画-——-过渡框架](2017-10-21-android动画-——-过渡框架.md)
 ## 共享元素过渡
 
 在两个Activity中，如果有两个或者多个元素控件相同（至少外表看起来如此），那么，我们就称这两个或者多个控件是共享元素。还是用例子来说明比较清晰一点。
