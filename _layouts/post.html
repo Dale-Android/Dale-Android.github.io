@@ -4,3 +4,19 @@ layout: layout
 
 {% assign __ = site.data.languages[site.language] %}
 {% include post.html %}
+
+<div id="container"></div>
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://jjeejj.github.io/js/gitment.js"></script>
+<script>
+var gitment = new Gitment({
+  id: '{{ page.date }}', 
+  owner: 'JaceeDai',
+  repo: 'jaceedai.github.io',
+  oauth: {
+    client_id: 'd51a46cf99c60f0df76a',
+    client_secret: '107fa5b9d9c2c047d25755d7515078f473e17ec7',
+  },
+})
+gitment.render('container')
+</script>
