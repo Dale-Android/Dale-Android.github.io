@@ -184,4 +184,4 @@ WorkManager以单例形式存在，调用`enqueue`，添加前面创建的reques
 
 ## 结语
 
-前面的测试代码，算是帮我们基本认识了WorkManager，也大概了解了它的基本使用。有时间，咱再来学习WorkManager的其他功能。
+前面的[测试代码](https://github.com/JaceeDai/work-manager-test)，算是帮我们基本认识了WorkManager，也大概了解了它的基本使用。有时间，咱再来学习WorkManager的其他功能。
