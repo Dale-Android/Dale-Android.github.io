@@ -15,7 +15,7 @@
         repo: '{{ site.gitalk.repo }}',
         owner: '{{ site.gitalk.owner }}',
         admin: ['{{ site.gitalk.owner }}'],
-        id: '{{ page.date }}',
+        id: '{{ page.date.substr(0,48) }}',
         labels: ['gitalk'],
         perPage: 50,
         distractionFreeMode: true
